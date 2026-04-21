@@ -140,14 +140,4 @@ public:
     }
 };
 
-// Provide a tiny main to allow local compilation if needed.
-// This main performs no I/O; OJ harness may compile its own tests.
-int main() {
-    // Simple smoke test to ensure template instantiation compiles.
-    DoublyLinkedList<int> dl;
-    dl.push_front(1);
-    dl.push_back(2);
-    dl.pop_front();
-    dl.pop_back();
-    return 0;
-}
+// Note: No main() here. The OJ harness provides its own main.
